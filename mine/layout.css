@@ -149,7 +149,7 @@ _height:expression(this.height < 820 ? "820px" :""); 	text-align: center;
 .home-gold .gold-wrapper ul li.col-1-4{float:left;width:25%;}
 .home-gold .gold-wrapper ul li a{display:block;padding:20px 0;border:solid 1px transparent;}
 .home-gold .gold-wrapper ul li a span{display:block;text-align:center;margin:0 auto;}
-.home-gold .gold-wrapper ul li a .icon{width:150px;height:150px;background:url(./goldico2.png) no-repeat;}
+.home-gold .gold-wrapper ul li a .icon{width:150px;height:150px;background:url(./mine/goldico2.png) no-repeat;}
 .home-gold .gold-wrapper ul li a .title{font-size:22px;line-height:30px;margin-top:10px;text-transform:uppercase;}
 .home-gold .gold-wrapper ul li a .title em{font-size:32px;font-family:Arial;vertical-align:-3px;margin-right:2px;font-style:normal}
 .home-gold .gold-wrapper ul li a .info{font-size:14px;text-align:center;text-transform:uppercase;font-family:Arial,sans-serif;}
