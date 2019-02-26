@@ -7,7 +7,7 @@
     <meta charset="gb2312">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>?绝影工作室|高端辅助唯一品牌</title>
+    <title>绝影工作室|高端辅助唯一品牌</title>
     <meta name="keywords" content="APEX英雄辅助,APEX英雄透视,APEX英雄自瞄,APEX英雄外挂 ">
     <meta name="description"
         content="绝影工作室，专注于APEX辅助，只做客户值得信赖的辅助, 全网唯一一家封号敢赔款，中毒敢赔款的辅助，独家一键内核防封模块，不必担心封号危险，一键绿色自检防毒模块，保护您的电脑在游戏期间不受攻击，免于沦为矿机的风险">
@@ -18,7 +18,7 @@
     <div class="video-container">
         <div class="video-bg"></div>
         <div class="video">
-            <video width="100%" height="auto" preload="auto" loop="" autoplay="" src="http://www.banhuguo.cn/mine/done.mp4">
+            <video id="id-video" width="100%" height="auto" preload="auto" loop="" autoplay="">
                 <source src="http://www.banhuguo.cn/mine/done.mp4" type="video/mp4">
             </video>
         </div>
@@ -29,7 +29,8 @@
                 <div class="y-span5">
                     <h1>
                         <a class="logo" href="javascript:;">
-                            <img src="./mine/apex-logo.png" alt="绝地求生保护伞"></a>
+                            <img src="./mine/apex-logo.png" alt="绝地求生保护伞">
+                        </a>
                     </h1>
                 </div>
                 <div id="nav" class="nav y-span7 y-last">
@@ -182,6 +183,26 @@
                     $(obj).attr("onclick", 'dl_lock(this)');
                 }, 3000);
                 window.location.href = href;
+            }
+        </script>
+        <script>
+            var mp4 = document.getElementById('id-video');
+            var promise = mp4.play();
+
+            if (promise !== undefined) {
+            promise.then(function(){
+                // Autoplay started!
+
+            }).catch(function() {
+                // Autoplay was prevented.
+
+                //--静音再播放--
+                mp4.muted=true;
+                mp4.play();
+
+                //--显示播放按钮--
+                //show a "Play" button so that user can start playback.
+            });
             }
         </script>
     </div>
